@@ -49,9 +49,15 @@ function average(inArray) {
 }
 
 
-max(Array.from(Array(90).keys()));
-sum(Array.from(Array(90).keys()));
-average(Array.from(Array(90).keys()));
+
+
+
+
+
+
+
+
+
 
 
 
@@ -71,13 +77,9 @@ const result = [[1, 5, 9, 3], [10, 30, 60, 20], [0, 89, 4005, 44.5]];
 const log = [true, true, true, true];
 for (let i = 0; i < a.length; i += 1) {
     out = [];
-    for (let j of [min, max, sum, average]) {
+    [min, max, sum, average].forEach((j) => {
         j(a[i]);
-    }
-    printme(out[0]);
-    printme(out[1]);
-    printme(out[2]);
-    printme(out[3]);
+    });
     log[0] = log[0] && (out[0] == `The minimum value is ${result[i][0]}.`);
     log[1] = log[1] && (out[1] == `The maximum value is ${result[i][1]}.`);
     log[2] = log[2] && (out[2] == `The sum of the array is ${result[i][2]}.`);
