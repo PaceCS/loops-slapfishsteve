@@ -35,7 +35,12 @@ function average(inArray) {
 
 
 
-
+//Try out your function here.
+const testArray = [1, 4, 5, 6, 9];
+min(testArray);
+max(testArray);
+sum(testArray);
+average(testArray);
 
 
 
