@@ -3,7 +3,7 @@
 function min(inArray) {
     // We do this by stepping through each entry of the array.
     // First, set the minimum to be the first value in the array.
-    let min = inArray[0];
+    let min = inArray[/*insert the appropriate value here*/];
 
     // Now go through all the remaining entries of the array
     // and determine if the current entry should become the new minimum
@@ -15,7 +15,7 @@ function min(inArray) {
     }
 
     // Now that the for loop has finished, log the minimum to the console.
-    console.log();
+    console.log(/* Put the appropriate variable here */);
 }
 
 // The function max will take in an array and log its maximum value.
